@@ -1,0 +1,26 @@
+@import "bootstrap/functions";
+@import "bootstrap/variables";
+
+$theme-colors: map-merge(
+  $theme-colors,
+  (
+    "post": #3a47de,
+  )
+);
+
+@import "bootstrap/bootstrap";
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.image-logo {
+  width: 50px;
+  height: 40px;
+}
+
+.profile-picture {
+  width: 32px;
+  height: 32px;
+}
