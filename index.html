@@ -12,10 +12,10 @@
     />
     <link rel="stylesheet" href="/css/styles.css" />
   </head>
-  <body>
-    <nav class="navbar navbar-expand-lg bg-white">
+  <body class="bg-back">
+    <nav class="navbar bg-white">
       <div class="container-xxl">
-        <div class="d-flex gap-2 justify-content-center align-items-center">
+        <div class="d-flex gap-2 justify-content-start align-items-center w-75">
           <button
             class="navbar-toggler d-block d-md-none border border-0"
             type="button"
@@ -32,7 +32,7 @@
             alt="devto logo"
             class="image-logo"
           />
-          <form class="d-none d-md-block" role="search">
+          <form class="d-none d-md-block w-100" role="search">
             <input
               class="form-control"
               type="search"
@@ -40,6 +40,26 @@
               aria-label="Search"
             />
           </form>
+        </div>
+
+        <div class="d-flex gap-2 justify-content-end align-items-center w-25">
+          <button
+            class="btn btn-outline-post d-none d-md-block fs-6"
+            type="submit"
+          >
+            Create post
+          </button>
+          <img src="/assets/search.svg" alt="" class="d-block d-md-none" />
+          <img
+            src="/assets/bell.svg"
+            alt=""
+            style="width: 24px; height: 24px"
+          />
+          <img
+            src="https://picsum.photos/id/237/200/300"
+            alt=""
+            class="rounded-circle profile-picture"
+          />
         </div>
 
         <div
@@ -59,21 +79,15 @@
             </li>
           </ul>
         </div>
-        <div class="d-flex gap-2 justify-content-center align-items-center">
-          <button class="btn btn-outline-post d-none d-md-block" type="submit">
-            Create post
-          </button>
-          <img src="/assets/search.svg" alt="" class="d-block d-md-none" />
-          <img src="/assets/bell.svg" alt="" />
-          <img
-            src="https://picsum.photos/id/237/200/300"
-            alt=""
-            class="rounded-circle profile-picture"
-          />
-        </div>
       </div>
     </nav>
-    <div class="container"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-2"><p>Col 1</p></div>
+        <div class="col-8"><p>Col 2</p></div>
+        <div class="col-2">Col 3</div>
+      </div>
+    </div>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
