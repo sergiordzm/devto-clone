@@ -42,18 +42,19 @@
           </form>
         </div>
 
-        <div class="d-flex gap-2 justify-content-end align-items-center w-25">
+        <div class="d-flex justify-content-end align-items-center w-25">
           <button
-            class="btn btn-outline-post d-none d-md-block fs-6"
+            class="btn btn-outline-post d-none d-md-block fs-6 me-2"
             type="submit"
           >
             Create post
           </button>
-          <img src="/assets/search.svg" alt="" class="d-block d-md-none" />
+          <img src="/assets/search.svg" alt="" class="d-block d-md-none me-2" />
           <img
             src="/assets/bell.svg"
             alt=""
             style="width: 24px; height: 24px"
+            class="me-2"
           />
           <img
             src="https://picsum.photos/id/237/200/300"
@@ -83,7 +84,7 @@
     </nav>
 
     <div class="container-xxl mt-2">
-      <div class="row d-flex gap-4">
+      <div class="row d-flex">
         <!-- col-1 -->
         <div class="col-lg-2 col-md-3 d-none d-md-block pt-5 pb-5">
           <ul class="list-group mt-2">
@@ -340,7 +341,7 @@
         </div>
 
         <!-- col-2 -->
-        <div class="col-12 col-md-9 col-lg-7 pt-5">
+        <div class="col-12 col-md-9 col-lg-7 px-0 px-lg-3 pt-5 pb-2 pb-lg-5">
           <div class="mt-3 bg-white rounded">
             <form class="d-flex" role="search">
               <input
@@ -356,7 +357,12 @@
               <button class="btn btn-white" type="submit">Discover</button>
               <button class="btn btn-white" type="submit">Following</button>
             </div>
-            <img src="/assets/points.svg" alt="" />
+            <img
+              src="/assets/points.svg"
+              alt=""
+              class="p-2"
+              style="width: 40px; height: 40px"
+            />
           </div>
           <!-- first card -->
           <div class="card mb-2 rounded">
@@ -365,7 +371,7 @@
               class="card-img-top"
               alt="..."
             />
-            <div class="card-body p-4">
+            <div class="card-body p-3 p-lg-4">
               <div class="d-flex align-items-center gap-3">
                 <img
                   src="https://media2.dev.to/dynamic/image/width=90,height=90,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Fuser%2Fprofile_image%2F161327%2F2ff05281-db58-4dcb-946a-4b679e4a266b.jpeg"
@@ -390,11 +396,11 @@
                   </p>
                 </div>
               </div>
-              <h5 class="card-title ps-5 pt-2 fw-bold" style="font-size: 30px">
+              <h5 class="card-title ps-lg-5 pt-2 fw-bold fs-2 fs-lg-1">
                 Microsoft announces a revolutionary keyboard designed for vibe
                 coding!
               </h5>
-              <div class="d-flex gap-3 ps-5 mb-2">
+              <div class="d-flex gap-3 ps-lg-5 mb-2">
                 <a href="#" class="text-decoration-none text-dark">
                   <p style="font-size: 14px" class="m-0">#news</p></a
                 >
@@ -415,7 +421,7 @@
                   <div>
                     <a href="#" class="text-decoration-none">
                       <div
-                        class="ps-5 d-flex justify-content-start align-items-center"
+                        class="ps-lg-5 d-flex justify-content-start align-items-center"
                       >
                         <img
                           src="https://assets.dev.to/assets/sparkle-heart-5f9bee3767e18deb1bb725290cb151c25234768a0e9a2bd39370c382d02920cf.svg"
@@ -442,7 +448,10 @@
                           alt=""
                           style="width: 18px; height: 18px"
                         />
-                        <p class="mb-0 ms-2 text-dark" style="font-size: 14px">
+                        <p
+                          class="mb-0 ms-2 text-dark d-none d-md-block"
+                          style="font-size: 14px"
+                        >
                           56 Reactions
                         </p>
                       </div>
@@ -450,10 +459,15 @@
                   </div>
                   <div>
                     <a href="#" class="text-decoration-none">
-                      <div class="d-flex">
-                        <img src="/assets/comment.svg" alt="" />
+                      <div class="d-flex align-items-center">
+                        <img
+                          src="/assets/comment.svg"
+                          alt=""
+                          style="width: 30px; height: 30px"
+                        />
                         <p class="mb-0 ms-1 text-dark" style="font-size: 14px">
-                          18 comments
+                          18
+                          <span class="d-none d-md-inline mb-0">comments</span>
                         </p>
                       </div>
                     </a>
@@ -523,9 +537,9 @@
             </div>
           </div>
 
-          <!-- third card -->
+          <!-- second card -->
           <div class="card mb-2 rounded">
-            <div class="card-body p-4">
+            <div class="card-body p-3 p-lg-4">
               <div class="d-flex align-items-center gap-3">
                 <div class="position-relative">
                   <img
@@ -559,10 +573,10 @@
                   </p>
                 </div>
               </div>
-              <h5 class="card-title ps-5 fw-bold" style="font-size: 24px">
+              <h5 class="card-title ps-lg-5 pt-2 fw-bold fs-2 fs-lg-1">
                 Introducing "DUMB DEV"
               </h5>
-              <div class="d-flex gap-3 ps-5 mb-2">
+              <div class="d-flex gap-3 ps-lg-5 mb-2">
                 <a href="#" class="text-decoration-none text-dark">
                   <p style="font-size: 14px" class="m-0">#watercooler</p>
                 </a>
@@ -580,7 +594,7 @@
                   <div>
                     <a href="#" class="text-decoration-none">
                       <div
-                        class="ps-5 d-flex justify-content-start align-items-center"
+                        class="ps-lg-5 d-flex justify-content-start align-items-center"
                       >
                         <img
                           src="https://assets.dev.to/assets/sparkle-heart-5f9bee3767e18deb1bb725290cb151c25234768a0e9a2bd39370c382d02920cf.svg"
@@ -607,7 +621,10 @@
                           alt=""
                           style="width: 18px; height: 18px"
                         />
-                        <p class="mb-0 ms-2 text-dark" style="font-size: 14px">
+                        <p
+                          class="mb-0 ms-2 text-dark d-none d-md-block"
+                          style="font-size: 14px"
+                        >
                           125 Reactions
                         </p>
                       </div>
@@ -615,10 +632,15 @@
                   </div>
                   <div>
                     <a href="#" class="text-decoration-none">
-                      <div class="d-flex">
-                        <img src="/assets/comment.svg" alt="" />
+                      <div class="d-flex align-items-center">
+                        <img
+                          src="/assets/comment.svg"
+                          alt=""
+                          style="width: 30px; height: 30px"
+                        />
                         <p class="mb-0 ms-1 text-dark" style="font-size: 14px">
-                          10 comments
+                          10
+                          <span class="d-none d-md-inline mb-0">comments</span>
                         </p>
                       </div>
                     </a>
@@ -699,9 +721,9 @@
             </div>
           </div>
 
-          <!-- second card -->
+          <!-- third card -->
           <div class="card mb-2 rounded">
-            <div class="card-body p-4">
+            <div class="card-body p-3 p-lg-4">
               <div class="d-flex align-items-center gap-3">
                 <div class="position-relative">
                   <img
@@ -735,11 +757,14 @@
                   </p>
                 </div>
               </div>
-              <h5 class="card-title ps-5 fw-bold" style="font-size: 24px">
+              <h5
+                class="card-title ps-lg-5 pt-2 fw-bold fs-2 fs-lg-1"
+                style="font-size: 24px"
+              >
                 Automate 90% of Your Work with AI Agents (Real Examples & Code
                 Inside) 🚀 🤖
               </h5>
-              <div class="d-flex gap-3 ps-5 mb-2">
+              <div class="d-flex gap-3 ps-lg-5 mb-2">
                 <a href="#" class="text-decoration-none text-dark">
                   <p style="font-size: 14px" class="m-0">#programming</p>
                 </a>
@@ -749,9 +774,6 @@
                 <a href="#" class="text-decoration-none text-dark">
                   <p style="font-size: 14px" class="m-0">#opensource</p></a
                 >
-                <a href="#" class="text-decoration-none text-dark">
-                  <p style="font-size: 14px" class="m-0">#productivity</p></a
-                >
               </div>
               <div class="d-flex justify-content-between align-items-center">
                 <div
@@ -760,7 +782,7 @@
                   <div>
                     <a href="#" class="text-decoration-none">
                       <div
-                        class="ps-5 d-flex justify-content-start align-items-center"
+                        class="ps-lg-5 d-flex justify-content-start align-items-center"
                       >
                         <img
                           src="https://assets.dev.to/assets/sparkle-heart-5f9bee3767e18deb1bb725290cb151c25234768a0e9a2bd39370c382d02920cf.svg"
@@ -787,7 +809,10 @@
                           alt=""
                           style="width: 18px; height: 18px"
                         />
-                        <p class="mb-0 ms-2 text-dark" style="font-size: 14px">
+                        <p
+                          class="mb-0 ms-2 text-dark d-none d-md-block"
+                          style="font-size: 14px"
+                        >
                           481 Reactions
                         </p>
                       </div>
@@ -795,10 +820,15 @@
                   </div>
                   <div>
                     <a href="#" class="text-decoration-none">
-                      <div class="d-flex">
-                        <img src="/assets/comment.svg" alt="" />
+                      <div class="d-flex align-items-center">
+                        <img
+                          src="/assets/comment.svg"
+                          alt=""
+                          style="width: 30px; height: 30px"
+                        />
                         <p class="mb-0 ms-1 text-dark" style="font-size: 14px">
-                          14 comments
+                          14
+                          <span class="d-none d-md-inline mb-0">comments</span>
                         </p>
                       </div>
                     </a>
@@ -866,9 +896,9 @@
             </div>
           </div>
 
-          <!-- third card -->
+          <!-- fourth card -->
           <div class="card mb-2 rounded">
-            <div class="card-body p-4">
+            <div class="card-body p-3 p-lg-4">
               <div class="d-flex align-items-center gap-3">
                 <div class="position-relative">
                   <img
@@ -895,10 +925,10 @@
                   </p>
                 </div>
               </div>
-              <h5 class="card-title ps-5 fw-bold" style="font-size: 24px">
+              <h5 class="card-title ps-lg-5 pt-2 fw-bold fs-2 fs-lg-1">
                 Self-hosting n8n: the easy way
               </h5>
-              <div class="d-flex gap-3 ps-5 mb-2">
+              <div class="d-flex gap-3 ps-lg-5 mb-2">
                 <a href="#" class="text-decoration-none text-dark">
                   <p style="font-size: 14px" class="m-0">#cloud</p>
                 </a>
@@ -919,7 +949,7 @@
                   <div>
                     <a href="#" class="text-decoration-none">
                       <div
-                        class="ps-5 d-flex justify-content-start align-items-center"
+                        class="ps-lg-5 d-flex justify-content-start align-items-center"
                       >
                         <img
                           src="https://assets.dev.to/assets/sparkle-heart-5f9bee3767e18deb1bb725290cb151c25234768a0e9a2bd39370c382d02920cf.svg"
@@ -946,7 +976,7 @@
                           alt=""
                           style="width: 18px; height: 18px"
                         />
-                        <p class="mb-0 ms-2 text-dark" style="font-size: 14px">
+                        <p class="mb-0 ms-2 text-dark d-none d-md-block">
                           58 Reactions
                         </p>
                       </div>
@@ -954,10 +984,15 @@
                   </div>
                   <div>
                     <a href="#" class="text-decoration-none">
-                      <div class="d-flex">
-                        <img src="/assets/comment.svg" alt="" />
+                      <div class="d-flex align-items-center">
+                        <img
+                          src="/assets/comment.svg"
+                          alt=""
+                          style="width: 30px; height: 30px"
+                        />
                         <p class="mb-0 ms-1 text-dark" style="font-size: 14px">
-                          9 comments
+                          9
+                          <span class="d-none d-md-inline mb-0">comments</span>
                         </p>
                       </div>
                     </a>
@@ -1025,9 +1060,9 @@
             </div>
           </div>
 
-          <!-- fourth card -->
+          <!-- fifth card -->
           <div class="card mb-2 rounded">
-            <div class="card-body p-4">
+            <div class="card-body p-3 p-lg-4">
               <div class="d-flex align-items-center gap-3">
                 <div class="position-relative">
                   <img
@@ -1054,10 +1089,10 @@
                   </p>
                 </div>
               </div>
-              <h5 class="card-title ps-5 fw-bold" style="font-size: 24px">
+              <h5 class="card-title ps-lg-5 pt-2 fw-bold fs-2 fs-lg-1">
                 Meme Monday
               </h5>
-              <div class="d-flex gap-3 ps-5 mb-2">
+              <div class="d-flex gap-3 ps-lg-5 mb-2">
                 <a href="#" class="text-decoration-none text-dark">
                   <p style="font-size: 14px" class="m-0">#discuss</p>
                 </a>
@@ -1075,7 +1110,7 @@
                   <div>
                     <a href="#" class="text-decoration-none">
                       <div
-                        class="ps-5 d-flex justify-content-start align-items-center"
+                        class="ps-lg-5 d-flex justify-content-start align-items-center"
                       >
                         <img
                           src="https://assets.dev.to/assets/sparkle-heart-5f9bee3767e18deb1bb725290cb151c25234768a0e9a2bd39370c382d02920cf.svg"
@@ -1102,7 +1137,10 @@
                           alt=""
                           style="width: 18px; height: 18px"
                         />
-                        <p class="mb-0 ms-2 text-dark" style="font-size: 14px">
+                        <p
+                          class="mb-0 ms-2 text-dark d-none d-md-block"
+                          style="font-size: 14px"
+                        >
                           68 Reactions
                         </p>
                       </div>
@@ -1110,10 +1148,15 @@
                   </div>
                   <div>
                     <a href="#" class="text-decoration-none">
-                      <div class="d-flex">
-                        <img src="/assets/comment.svg" alt="" />
+                      <div class="d-flex align-items-center">
+                        <img
+                          src="/assets/comment.svg"
+                          alt=""
+                          style="width: 30px; height: 30px"
+                        />
                         <p class="mb-0 ms-1 text-dark" style="font-size: 14px">
-                          85 comments
+                          85
+                          <span class="d-none d-md-inline mb-0">comments</span>
                         </p>
                       </div>
                     </a>
@@ -1190,9 +1233,9 @@
             </div>
           </div>
 
-          <!-- fifth card -->
+          <!-- sixth card -->
           <div class="card mb-2 rounded">
-            <div class="card-body p-4">
+            <div class="card-body p-3 p-lg-4">
               <div class="d-flex align-items-center gap-3">
                 <div class="position-relative">
                   <img
@@ -1219,11 +1262,11 @@
                   </p>
                 </div>
               </div>
-              <h5 class="card-title ps-5 fw-bold" style="font-size: 24px">
+              <h5 class="card-title ps-lg-5 pt-2 fw-bold fs-2 fs-lg-1">
                 The Ultimate Stack for Serverless & Cloud-Native Developers in
                 2025 ⚡️
               </h5>
-              <div class="d-flex gap-3 ps-5 mb-2">
+              <div class="d-flex gap-3 ps-lg-5 mb-2">
                 <a href="#" class="text-decoration-none text-dark">
                   <p style="font-size: 14px" class="m-0">#webdev</p>
                 </a>
@@ -1244,7 +1287,7 @@
                   <div>
                     <a href="#" class="text-decoration-none">
                       <div
-                        class="ps-5 d-flex justify-content-start align-items-center"
+                        class="ps-lg-5 d-flex justify-content-start align-items-center"
                       >
                         <img
                           src="https://assets.dev.to/assets/sparkle-heart-5f9bee3767e18deb1bb725290cb151c25234768a0e9a2bd39370c382d02920cf.svg"
@@ -1271,7 +1314,10 @@
                           alt=""
                           style="width: 18px; height: 18px"
                         />
-                        <p class="mb-0 ms-2 text-dark" style="font-size: 14px">
+                        <p
+                          class="mb-0 ms-2 text-dark d-none d-md-block"
+                          style="font-size: 14px"
+                        >
                           87 Reactions
                         </p>
                       </div>
@@ -1279,10 +1325,15 @@
                   </div>
                   <div>
                     <a href="#" class="text-decoration-none">
-                      <div class="d-flex">
-                        <img src="/assets/comment.svg" alt="" />
+                      <div class="d-flex align-items-center">
+                        <img
+                          src="/assets/comment.svg"
+                          alt=""
+                          style="width: 30px; height: 30px"
+                        />
                         <p class="mb-0 ms-1 text-dark" style="font-size: 14px">
-                          11 comments
+                          11
+                          <span class="d-none d-md-inline mb-0">comments</span>
                         </p>
                       </div>
                     </a>
@@ -1356,7 +1407,197 @@
         </div>
 
         <!-- col-3 -->
-        <div class="col-3 d-none d-lg-block">Col 3</div>
+        <div class="col-lg-3 col-md-0 d-none d-lg-block pt-5">
+          <div class="mt-3 bg-white w-100 px-4 py-3 rounded border-bottom">
+            <h5 style="font-size: 20px" class="text-start mb-0 fw-bold">
+              Active discussions
+            </h5>
+          </div>
+          <a href="" class="text-decoration-none">
+            <div class="py-3 bg-white px-4 border-bottom">
+              <p class="text-dark mb-0" style="font-size: 16px">
+                Congrats to the KendoReact Free Components Challenge Winners!
+              </p>
+              <small class="text-gray">8 comments</small>
+            </div>
+          </a>
+          <a href="" class="text-decoration-none">
+            <div class="py-3 bg-white px-4 border-bottom">
+              <p class="text-dark mb-0" style="font-size: 16px">
+                Using the Gemini API on Cloud Run to Build a Chat Application
+              </p>
+              <small class="text-gray">3 comments</small>
+            </div>
+          </a>
+          <a href="" class="text-decoration-none">
+            <div class="py-3 bg-white px-4 border-bottom">
+              <p class="text-dark mb-0" style="font-size: 16px">Meme Monday</p>
+              <small class="text-gray">85 comments</small>
+            </div>
+          </a>
+          <a href="" class="text-decoration-none">
+            <div class="py-3 bg-white px-4 border-bottom">
+              <p class="text-dark mb-0" style="font-size: 16px">
+                Teaching Code in the AI Era: Why Fundamentals Still Matter
+              </p>
+              <small class="text-gray">2 comments</small>
+            </div>
+          </a>
+          <a href="" class="text-decoration-none">
+            <div class="py-3 bg-white px-4 border-bottom">
+              <p class="text-dark mb-0" style="font-size: 16px">
+                Self-hosting n8n: the easy way
+              </p>
+              <small class="text-gray">9 comments</small>
+            </div>
+          </a>
+          <a href="" class="text-decoration-none"
+            ><div class="py-3 bg-white px-4 border-bottom">
+              <p class="text-dark mb-0" style="font-size: 16px">
+                Three Ways to Fight AI Crawlers
+              </p>
+              <small class="text-gray">2 comments</small>
+            </div>
+          </a>
+          <a href="" class="text-decoration-none">
+            <div class="py-3 bg-white px-4 border-bottom">
+              <p class="text-dark mb-0" style="font-size: 16px">
+                Microsoft announces a revolutionary keyboard designed for vibe
+                coding!
+              </p>
+              <small class="text-gray">18 comments</small>
+            </div>
+          </a>
+          <a href="" class="text-decoration-none">
+            <div class="py-3 bg-white px-4 border-bottom">
+              <p class="text-dark mb-0" style="font-size: 16px">
+                Introducing "DUMB DEV"
+              </p>
+              <small class="text-gray">10 comments</small>
+            </div>
+          </a>
+          <div class="mt-2 bg-white w-100 px-3 py-2 rounded border-bottom">
+            <div class="d-flex justify-content-between align-items-center">
+              <p class="text-dark mb-0" style="font-size: 14px">
+                👋 What's happening this week
+              </p>
+              <img src="/assets/points.svg" alt="" />
+            </div>
+            <h5 class="mt-3">Challenges 🤗</h5>
+            <div class="border border-dark rounded p-2 mb-3">
+              <p style="font-size: 16px">Just Launched 🚀</p>
+              <a href="">
+                <img
+                  src="https://media2.dev.to/dynamic/image/width=880%2Cheight=%2Cfit=scale-down%2Cgravity=auto%2Cformat=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Ftdu7wtkzz67tqpzexnv1.png"
+                  alt=""
+                  class="w-100 rounded mb-2"
+                />
+                <p style="font-size: 16px" class="text-primary">
+                  Alibaba Cloud Web Game Challenge
+                </p>
+              </a>
+              <p style="font-size: 16px" class="fst-italic">
+                Get your submissions in early!
+              </p>
+            </div>
+            <div class="border border-dark rounded p-2 mb-3">
+              <p style="font-size: 16px">Happening Now ✨</p>
+              <a href="">
+                <img
+                  src="https://media2.dev.to/dynamic/image/width=880%2Cheight=%2Cfit=scale-down%2Cgravity=auto%2Cformat=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fwkz8yrhhodumbj7pnfwv.png"
+                  alt=""
+                  class="w-100 rounded mb-2"
+                />
+                <p style="font-size: 16px" class="text-primary">
+                  Pulumi Deploy and Document Challenge
+                </p>
+              </a>
+              <p style="font-size: 16px" class="fst-italic">
+                $3,000 prize pool!
+              </p>
+            </div>
+            <div class="border border-dark rounded p-2 mb-3">
+              <p style="font-size: 16px">Celebrate With Us 💜</p>
+              <a href="">
+                <img
+                  src="https://media2.dev.to/dynamic/image/width=880%2Cheight=%2Cfit=scale-down%2Cgravity=auto%2Cformat=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fi7uzu7m51rl9yhs2yryr.png"
+                  alt=""
+                  class="w-100 rounded mb-2"
+                />
+                <p style="font-size: 16px" class="text-primary">
+                  WeCoded Challenge
+                </p>
+              </a>
+              <p style="font-size: 16px" class="fst-italic">
+                Build a landing page or share your story!
+              </p>
+            </div>
+          </div>
+          <div class="mt-2 bg-white w-100 px-3 py-2 rounded border-bottom">
+            <h5 class="mt-1 mb-0">#discuss</h5>
+            <small class="text-gray" style="font-size: 11px"
+              >Discussion threads targeting the whole community
+            </small>
+          </div>
+          <a href="" class="text-decoration-none">
+            <div class="bg-white w-100 px-3 py-3 border-bottom">
+              <p class="text-dark mb-0">
+                Why Learn Cloud/AWS? 🧐 Provisioning AWS EC2s in VPC using
+                Terraform with Hands-on Sample ☁️🖥️
+              </p>
+              <small class="text-gray pt-1" style="font-size: 14px"
+                >2 comments
+              </small>
+            </div>
+          </a>
+          <a href="" class="text-decoration-none">
+            <div class="bg-white w-100 px-3 py-3 border-bottom">
+              <p class="text-dark mb-0" style="font-size: 16px">
+                🔥 XAMPP is Dead？ Docker is Overkill？Try The Lightning-Fast
+                Dev Tool 🔥
+              </p>
+              <small class="text-gray pt-1" style="font-size: 14px"
+                >4 comments
+              </small>
+            </div>
+          </a>
+          <a href="" class="text-decoration-none">
+            <div class="bg-white w-100 px-3 py-3 border-bottom">
+              <p class="text-dark mb-0" style="font-size: 16px">
+                Modernizing the Workplace with Hybrid IT
+              </p>
+              <div
+                class="bg-new rounded w-25 h-25 p-1 mt-2 d-flex justify-content-center align-items-center"
+              >
+                <p class="text-brown mb-0">New</p>
+              </div>
+            </div>
+          </a>
+          <a href="" class="text-decoration-none">
+            <div class="bg-white w-100 px-3 py-3 border-bottom">
+              <p class="text-dark mb-0" style="font-size: 16px">
+                🚀 Vibe Coding is all about speed, creativity, and AI-powered
+                flow—but does it make us better deve...
+              </p>
+              <div
+                class="bg-new rounded w-25 h-25 p-1 mt-2 d-flex justify-content-center align-items-center"
+              >
+                <p class="text-brown mb-0">New</p>
+              </div>
+            </div>
+          </a>
+          <a href="" class="text-decoration-none">
+            <div class="bg-white w-100 px-3 py-3 border-bottom">
+              <p class="text-dark mb-0" style="font-size: 16px">
+                AWS Community Day Italy 2025: My Experience as an Attendee and
+                Session Takeaways
+              </p>
+              <small class="text-gray pt-1" style="font-size: 14px"
+                >2 comments
+              </small>
+            </div>
+          </a>
+        </div>
       </div>
     </div>
     <script
