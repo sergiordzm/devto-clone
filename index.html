@@ -3,7 +3,1607 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>DEV Community</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/css/styles.css" />
   </head>
-  <body></body>
+  <body class="bg-back">
+    <nav class="navbar bg-white fixed-top">
+      <div class="container-xxl">
+        <div class="d-flex gap-2 justify-content-start align-items-center w-75">
+          <button
+            class="navbar-toggler d-block d-md-none border border-0"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <img
+            src="https://media2.dev.to/dynamic/image/quality=100/https://dev-to-uploads.s3.amazonaws.com/uploads/logos/resized_logo_UQww2soKuUsjaOGNB38o.png"
+            alt="devto logo"
+            class="image-logo"
+          />
+          <form class="d-none d-md-block w-100" role="search">
+            <input
+              class="form-control"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+          </form>
+        </div>
+
+        <div class="d-flex justify-content-end align-items-center w-25">
+          <button
+            class="btn btn-outline-post d-none d-md-block fs-6 me-2"
+            type="submit"
+          >
+            Create post
+          </button>
+          <img src="/assets/search.svg" alt="" class="d-block d-md-none me-2" />
+          <img
+            src="/assets/bell.svg"
+            alt=""
+            style="width: 24px; height: 24px"
+            class="me-2"
+          />
+          <img
+            src="https://picsum.photos/id/237/200/300"
+            alt=""
+            class="rounded-circle profile-picture"
+          />
+        </div>
+
+        <div
+          class="collapse navbar-collapse dropdown-menu-start w-50"
+          id="navbarSupportedContent"
+        >
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <form class="d-flex d-block d-md-none" role="search">
+                <input
+                  class="form-control me-2"
+                  type="search"
+                  placeholder="Search"
+                  aria-label="Search"
+                />
+              </form>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container-xxl mt-2">
+      <div class="row d-flex">
+        <!-- col-1 -->
+        <div class="col-lg-2 col-md-3 d-none d-md-block pt-5 pb-5">
+          <ul class="list-group mt-2">
+            <li class="list-group-item border-0 pb-1 bg-back">
+              <a
+                href="#"
+                class="d-flex align-items-center justify-content-start gap-1 text-decoration-none"
+              >
+                <img src="/assets/home.svg" alt="" style="width: 20px" />
+                <p class="m-0 text-dark text-nowrap" style="font-size: 14px">
+                  Home
+                </p>
+              </a>
+            </li>
+            <li class="list-group-item border-0 pb-1 bg-back">
+              <a
+                href="#"
+                class="d-flex align-items-center justify-content-start gap-1 text-decoration-none"
+              >
+                <img src="/assets/dev.svg" alt="" style="width: 20px" />
+                <p class="m-0 text-dark text-nowrap" style="font-size: 14px">
+                  DEV++
+                </p>
+              </a>
+            </li>
+            <li class="list-group-item border-0 pb-1 bg-back">
+              <a
+                href="#"
+                class="d-flex align-items-center justify-content-start gap-1 text-decoration-none"
+              >
+                <img src="/assets/reading.svg" alt="" style="width: 20px" />
+                <p class="m-0 text-dark text-nowrap" style="font-size: 14px">
+                  Reading List
+                </p>
+              </a>
+            </li>
+            <li class="list-group-item border-0 pb-1 bg-back">
+              <a
+                href="#"
+                class="d-flex align-items-center justify-content-start gap-1 text-decoration-none"
+              >
+                <img src="/assets/podcasts.svg" alt="" style="width: 20px" />
+                <p class="m-0 text-dark text-nowrap" style="font-size: 14px">
+                  Podcasts
+                </p>
+              </a>
+            </li>
+            <li class="list-group-item border-0 pb-1 bg-back">
+              <a
+                href="#"
+                class="d-flex align-items-center justify-content-start gap-1 text-decoration-none"
+              >
+                <img src="/assets/videos.svg" alt="" style="width: 20px" />
+                <p class="m-0 text-dark text-nowrap" style="font-size: 14px">
+                  Videos
+                </p>
+              </a>
+            </li>
+            <li class="list-group-item border-0 pb-1 bg-back">
+              <a
+                href="#"
+                class="d-flex align-items-center justify-content-start gap-1 text-decoration-none"
+              >
+                <img src="/assets/tags.svg" alt="" style="width: 20px" />
+                <p class="m-0 text-dark text-nowrap" style="font-size: 14px">
+                  Tags
+                </p>
+              </a>
+            </li>
+            <li class="list-group-item border-0 pb-1 bg-back">
+              <a
+                href="#"
+                class="d-flex align-items-center justify-content-start gap-1 text-decoration-none"
+              >
+                <img src="/assets/help.svg" alt="" style="width: 20px" />
+                <p class="m-0 text-dark text-nowrap" style="font-size: 14px">
+                  DEV Help
+                </p>
+              </a>
+            </li>
+            <li class="list-group-item border-0 pb-1 bg-back">
+              <a
+                href="#"
+                class="d-flex align-items-center justify-content-start gap-1 text-decoration-none"
+              >
+                <img src="/assets/forem.svg" alt="" style="width: 20px" />
+                <p class="m-0 text-dark text-nowrap" style="font-size: 14px">
+                  Forem Shop
+                </p>
+              </a>
+            </li>
+            <li class="list-group-item border-0 pb-1 bg-back">
+              <a
+                href="#"
+                class="d-flex align-items-center justify-content-start gap-1 text-decoration-none"
+              >
+                <img src="/assets/advertise.svg" alt="" style="width: 20px" />
+                <p class="m-0 text-dark text-nowrap" style="font-size: 14px">
+                  Advertise on DEV
+                </p>
+              </a>
+            </li>
+            <li class="list-group-item border-0 pb-1 bg-back">
+              <a
+                href="#"
+                class="d-flex align-items-center justify-content-start gap-1 text-decoration-none"
+              >
+                <img src="/assets/challenges.svg" alt="" style="width: 20px" />
+                <p class="m-0 text-dark text-nowrap" style="font-size: 14px">
+                  DEV Challenges
+                </p>
+              </a>
+            </li>
+            <li class="list-group-item border-0 pb-1 bg-back">
+              <a
+                href="#"
+                class="d-flex align-items-center justify-content-start gap-1 text-decoration-none"
+              >
+                <img src="/assets/showcase.svg" alt="" style="width: 20px" />
+                <p class="m-0 text-dark text-nowrap" style="font-size: 14px">
+                  DEV Showcase
+                </p>
+              </a>
+            </li>
+            <li class="list-group-item border-0 pb-1 bg-back">
+              <a
+                href="#"
+                class="d-flex align-items-center justify-content-start gap-1 text-decoration-none"
+              >
+                <img src="/assets/about.svg" alt="" style="width: 20px" />
+                <p class="m-0 text-dark text-nowrap" style="font-size: 14px">
+                  About
+                </p>
+              </a>
+            </li>
+            <li class="list-group-item border-0 pb-1 bg-back">
+              <a
+                href="#"
+                class="d-flex align-items-center justify-content-start gap-1 text-decoration-none"
+              >
+                <img src="/assets/contact.svg" alt="" style="width: 20px" />
+                <p class="m-0 text-dark text-nowrap" style="font-size: 14px">
+                  Contact
+                </p>
+              </a>
+            </li>
+            <li class="list-group-item border-0 pt-4 pb-1 bg-back">
+              <p class="m-0 fs-6 text-dark fw-bold">Other</p>
+            </li>
+            <li class="list-group-item border-0 pb-1 bg-back">
+              <a
+                href="#"
+                class="d-flex align-items-center justify-content-start gap-1 text-decoration-none"
+              >
+                <img src="/assets/conduct.svg" alt="" style="width: 20px" />
+                <p class="m-0 text-dark text-nowrap" style="font-size: 14px">
+                  Code of Conduct
+                </p>
+              </a>
+            </li>
+            <li class="list-group-item border-0 pb-1 bg-back">
+              <a
+                href="#"
+                class="d-flex align-items-center justify-content-start gap-1 text-decoration-none"
+              >
+                <img src="/assets/privacy.svg" alt="" style="width: 20px" />
+                <p class="m-0 text-dark text-nowrap" style="font-size: 14px">
+                  Privacy Policy
+                </p>
+              </a>
+            </li>
+            <li class="list-group-item border-0 pb-1 bg-back">
+              <a
+                href="#"
+                class="d-flex align-items-center justify-content-start gap-1 text-decoration-none"
+              >
+                <img src="/assets/terms.svg" alt="" style="width: 20px" />
+                <p class="m-0 text-dark text-nowrap" style="font-size: 14px">
+                  Terms of use
+                </p>
+              </a>
+            </li>
+            <li
+              class="list-group-item border-0 pb-1 bg-back d-flex flex-wrap gap-3 mt-4"
+            >
+              <img src="/assets/x.svg" alt="" style="width: 18px" />
+              <img src="/assets/facebook.svg" alt="" style="width: 20px" />
+              <img src="/assets/github.svg" alt="" style="width: 20px" />
+              <img src="/assets/instagram.svg" alt="" style="width: 20px" />
+              <img src="/assets/twitch.svg" alt="" style="width: 20px" />
+              <img src="/assets/mastodon.svg" alt="" style="width: 20px" />
+              <img src="/assets/bluesky.svg" alt="" style="width: 20px" />
+            </li>
+            <li
+              class="list-group-item border-0 pb-1 bg-back d-flex justify-content-between align-items-center pt-4 pe-0"
+            >
+              <p class="text-dark fw-bold fs-6 m-0">My Tags</p>
+              <img src="/assets/myTags.svg" alt="" style="width: 20px" />
+            </li>
+            <li class="list-group-item border-0 pb-1 bg-white mt-4 rounded">
+              <div
+                class="d-flex justify-content-between align-items-center pt-2 pb-2"
+              >
+                <p class="text-dark m-0" style="font-size: 14px">
+                  💎 DEV Diamond Sponsors
+                </p>
+                <img src="/assets/points.svg" alt="" class="m-0 p-0" />
+              </div>
+              <p class="text-dark fw-bold pb-1" style="font-size: 15px">
+                Thank you to our Diamond Sponsor Neon
+              </p>
+              <img
+                src="https://media2.dev.to/dynamic/image/width=350%2Cheight=%2Cfit=scale-down%2Cgravity=auto%2Cformat=auto/https%3A%2F%2Fbillboards.forem.tools%2Frails%2Factive_storage%2Fblobs%2Fredirect%2FeyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBbGNDIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--81f4f05c27808f68c1e91590ff950026157d3fd0%2FScreenshot%25202024-07-19%2520at%252012.04.24%25E2%2580%25AFPM.png"
+                alt=""
+                class="rounded mb-4"
+                style="width: 100%"
+              />
+              <p class="fst-italic mb-3" style="font-size: 15px">
+                Neon is the official database partner of DEV
+              </p>
+              <p class="text-dark" style="font-size: 15px">Happy coding ❤️</p>
+            </li>
+            <li class="list-group-item border-0 pb-1 bg-white mt-3 rounded">
+              <div
+                class="d-flex justify-content-between align-items-center pt-2 mb-3"
+              >
+                <p class="text-dark m-0" style="font-size: 12px">
+                  DEV Community
+                </p>
+                <img src="/assets/points.svg" alt="" class="m-0 p-0" />
+              </div>
+              <p class="fw-bold fs-6">
+                Easiest way to help the DEV community feel more like a
+                community?
+              </p>
+              <p style="font-size: 13px">
+                Head over to our <a href="#">Welcome Thread</a> greet some new
+                DEV members!
+              </p>
+            </li>
+            <li class="list-group-item border-0 bg-back mt-3 p-0">
+              <p style="font-size: 11px" class="text-gray">
+                <a href="#">Forem</a> A constructive and inclusive social
+                network for software developers. With you every step of your
+                journey. <br />
+                Built on <a href="#">Forem</a> — the
+                <a href="">open source</a> software that powers DEV and other
+                inclusive communities. <br />
+                Made with love and <a href="#">Ruby on Rails</a>. Forem © 2016 -
+                2025.
+              </p>
+            </li>
+          </ul>
+        </div>
+
+        <!-- col-2 -->
+        <div class="col-12 col-md-9 col-lg-7 px-0 px-lg-3 pt-5 pb-2 pb-lg-5">
+          <div class="mt-3 bg-white rounded">
+            <form class="d-flex" role="search">
+              <input
+                class="form-control m-1"
+                type="search"
+                placeholder="What's on your mind?"
+                aria-label="Search"
+              />
+            </form>
+          </div>
+          <div class="d-flex justify-content-between align-items-center mt-2">
+            <div>
+              <button class="btn btn-white" type="submit">Discover</button>
+              <button class="btn btn-white" type="submit">Following</button>
+            </div>
+            <img
+              src="/assets/points.svg"
+              alt=""
+              class="p-2"
+              style="width: 40px; height: 40px"
+            />
+          </div>
+          <!-- first card -->
+          <div class="card mb-2 rounded">
+            <img
+              src="https://media2.dev.to/dynamic/image/width=1000,height=420,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fw2ri016fvy23d6ciiedh.jpg"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body p-3 p-lg-4">
+              <div class="d-flex align-items-center gap-3">
+                <img
+                  src="https://media2.dev.to/dynamic/image/width=90,height=90,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Fuser%2Fprofile_image%2F161327%2F2ff05281-db58-4dcb-946a-4b679e4a266b.jpeg"
+                  alt=""
+                  class="rounded-circle"
+                  style="width: 32px; height: 32px"
+                />
+                <div>
+                  <div
+                    class="d-flex justify-content-start align-items-center gap-1"
+                  >
+                    <p class="m-0" style="font-size: 14px">Alvaro Montoro</p>
+                    <img
+                      src="https://assets.dev.to/assets/subscription-icon-805dfa7ac7dd660f07ed8d654877270825b07a92a03841aa99a1093bd00431b2.png"
+                      alt=""
+                      style="width: 20px; height: 13px"
+                    />
+                  </div>
+
+                  <p class="m-0 text-gray" style="font-size: 12px">
+                    Apr 1 (2 days ago)
+                  </p>
+                </div>
+              </div>
+              <h5 class="card-title ps-lg-5 pt-2 fw-bold fs-2 fs-lg-1">
+                Microsoft announces a revolutionary keyboard designed for vibe
+                coding!
+              </h5>
+              <div class="d-flex gap-3 ps-lg-5 mb-2">
+                <a href="#" class="text-decoration-none text-dark">
+                  <p style="font-size: 14px" class="m-0">#news</p></a
+                >
+                <a href="#" class="text-decoration-none text-dark">
+                  <p style="font-size: 14px" class="m-0">#webdev</p></a
+                >
+                <a href="#" class="text-decoration-none text-dark">
+                  <p style="font-size: 14px" class="m-0">#software</p></a
+                >
+                <a href="#" class="text-decoration-none text-dark">
+                  <p style="font-size: 14px" class="m-0">#watercooler</p></a
+                >
+              </div>
+              <div class="d-flex justify-content-between align-items-center">
+                <div
+                  class="d-flex justify-content-start align-items-center gap-3"
+                >
+                  <div>
+                    <a href="#" class="text-decoration-none">
+                      <div
+                        class="ps-lg-5 d-flex justify-content-start align-items-center"
+                      >
+                        <img
+                          src="https://assets.dev.to/assets/sparkle-heart-5f9bee3767e18deb1bb725290cb151c25234768a0e9a2bd39370c382d02920cf.svg"
+                          alt=""
+                          style="width: 18px; height: 18px"
+                        />
+                        <img
+                          src="https://assets.dev.to/assets/multi-unicorn-b44d6f8c23cdd00964192bedc38af3e82463978aa611b4365bd33a0f1f4f3e97.svg"
+                          alt=""
+                          style="width: 18px; height: 18px"
+                        />
+                        <img
+                          src="https://assets.dev.to/assets/exploding-head-daceb38d627e6ae9b730f36a1e390fca556a4289d5a41abb2c35068ad3e2c4b5.svg"
+                          alt=""
+                          style="width: 18px; height: 18px"
+                        />
+                        <img
+                          src="https://assets.dev.to/assets/raised-hands-74b2099fd66a39f2d7eed9305ee0f4553df0eb7b4f11b01b6b1b499973048fe5.svg"
+                          alt=""
+                          style="width: 18px; height: 18px"
+                        />
+                        <img
+                          src="https://assets.dev.to/assets/fire-f60e7a582391810302117f987b22a8ef04a2fe0df7e3258a5f49332df1cec71e.svg"
+                          alt=""
+                          style="width: 18px; height: 18px"
+                        />
+                        <p
+                          class="mb-0 ms-2 text-dark d-none d-md-block"
+                          style="font-size: 14px"
+                        >
+                          56 Reactions
+                        </p>
+                      </div>
+                    </a>
+                  </div>
+                  <div>
+                    <a href="#" class="text-decoration-none">
+                      <div class="d-flex align-items-center">
+                        <img
+                          src="/assets/comment.svg"
+                          alt=""
+                          style="width: 30px; height: 30px"
+                        />
+                        <p class="mb-0 ms-1 text-dark" style="font-size: 14px">
+                          18
+                          <span class="d-none d-md-inline mb-0">comments</span>
+                        </p>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <a href="#" class="text-decoration-none"
+                  ><div
+                    class="d-flex justify-content-end align-items-center gap-3"
+                  >
+                    <small class="mb-0 ms-2 text-dark" style="font-size: 12px">
+                      2 min read
+                    </small>
+                    <img src="/assets/bookmark.svg" alt="" />
+                  </div>
+                </a>
+              </div>
+              <div class="d-flex align-items-top gap-3 mt-3">
+                <div class="d-flex justify-content-center ps-1">
+                  <img
+                    src="https://media2.dev.to/dynamic/image/width=90,height=90,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Fuser%2Fprofile_image%2F178223%2Fc9c52832-0421-4516-8ce4-83cb405e1a81.jpg"
+                    alt=""
+                    class="rounded-circle"
+                    style="width: 24px; height: 24px"
+                  />
+                </div>
+                <div class="px-3 pt-3 pb-1 bg-back w-100 rounded">
+                  <div class="d-flex gap-1">
+                    <p class="mb-0" style="font-size: 14px">
+                      Melroy van den Berg
+                    </p>
+                    <small class="text-gray" style="font-size: 14px"
+                      >1 day ago</small
+                    >
+                  </div>
+                  <p class="card-text mb-3" style="font-size: 14px">
+                    I'm missing the copilot button 🤗🤣
+                  </p>
+                </div>
+              </div>
+              <div class="d-flex align-items-top gap-3 mt-2">
+                <div class="d-flex justify-content-center ps-1">
+                  <img
+                    src="https://media2.dev.to/dynamic/image/width=90,height=90,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Fuser%2Fprofile_image%2F2595035%2F3b4de956-ccb9-4948-a3e5-94298ee2c2d6.png"
+                    alt=""
+                    class="rounded-circle"
+                    style="width: 24px; height: 24px"
+                  />
+                </div>
+                <div class="px-3 pt-3 pb-1 bg-back w-100 rounded">
+                  <div class="d-flex gap-1">
+                    <p class="mb-0" style="font-size: 14px">Phil Coder</p>
+                    <small class="text-gray" style="font-size: 14px"
+                      >1 day ago</small
+                    >
+                  </div>
+                  <p class="card-text mb-3" style="font-size: 14px">
+                    Why would have been funnier if vibe coding was tab
+                    completion. Lol
+                  </p>
+                </div>
+              </div>
+              <div class="pt-4">
+                <a href="" class="text-decoration-none" style="font-size: 14px">
+                  <p class="text-dark ps-5">See all 18 comments</p>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- second card -->
+          <div class="card mb-2 rounded">
+            <div class="card-body p-3 p-lg-4">
+              <div class="d-flex align-items-center gap-3">
+                <div class="position-relative">
+                  <img
+                    src="https://media2.dev.to/dynamic/image/quality=100/https://dev-to-uploads.s3.amazonaws.com/uploads/logos/resized_logo_UQww2soKuUsjaOGNB38o.png"
+                    alt=""
+                    class="rounded"
+                    style="width: 32px; height: 32px"
+                  />
+                  <img
+                    src="https://media2.dev.to/dynamic/image/width=90,height=90,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Fuser%2Fprofile_image%2F1%2Ff451a206-11c8-4e3d-8936-143d0a7e65bb.png"
+                    alt=""
+                    class="rounded-circle position-absolute bottom-0 end-0 border border-white border-2"
+                    style="width: 21px; height: 21px"
+                  />
+                </div>
+                <div>
+                  <div
+                    class="d-flex justify-content-start align-items-center gap-1"
+                  >
+                    <p class="m-0" style="font-size: 14px">Ben Halpern</p>
+                    <img
+                      src="https://assets.dev.to/assets/subscription-icon-805dfa7ac7dd660f07ed8d654877270825b07a92a03841aa99a1093bd00431b2.png"
+                      alt=""
+                      style="width: 20px; height: 13px"
+                    />
+                    <p class="mb-0" style="font-size: 14px">for The DEV Team</p>
+                  </div>
+
+                  <p class="m-0 text-gray" style="font-size: 12px">
+                    Apr 1 (3 days ago)
+                  </p>
+                </div>
+              </div>
+              <h5 class="card-title ps-lg-5 pt-2 fw-bold fs-2 fs-lg-1">
+                Introducing "DUMB DEV"
+              </h5>
+              <div class="d-flex gap-3 ps-lg-5 mb-2">
+                <a href="#" class="text-decoration-none text-dark">
+                  <p style="font-size: 14px" class="m-0">#watercooler</p>
+                </a>
+                <a href="#" class="text-decoration-none text-dark">
+                  <p style="font-size: 14px" class="m-0">#news</p></a
+                >
+                <a href="#" class="text-decoration-none text-dark">
+                  <p style="font-size: 14px" class="m-0">#discuss</p></a
+                >
+              </div>
+              <div class="d-flex justify-content-between align-items-center">
+                <div
+                  class="d-flex justify-content-start align-items-center gap-3"
+                >
+                  <div>
+                    <a href="#" class="text-decoration-none">
+                      <div
+                        class="ps-lg-5 d-flex justify-content-start align-items-center"
+                      >
+                        <img
+                          src="https://assets.dev.to/assets/sparkle-heart-5f9bee3767e18deb1bb725290cb151c25234768a0e9a2bd39370c382d02920cf.svg"
+                          alt=""
+                          style="width: 18px; height: 18px"
+                        />
+                        <img
+                          src="https://assets.dev.to/assets/multi-unicorn-b44d6f8c23cdd00964192bedc38af3e82463978aa611b4365bd33a0f1f4f3e97.svg"
+                          alt=""
+                          style="width: 18px; height: 18px"
+                        />
+                        <img
+                          src="https://assets.dev.to/assets/exploding-head-daceb38d627e6ae9b730f36a1e390fca556a4289d5a41abb2c35068ad3e2c4b5.svg"
+                          alt=""
+                          style="width: 18px; height: 18px"
+                        />
+                        <img
+                          src="https://assets.dev.to/assets/raised-hands-74b2099fd66a39f2d7eed9305ee0f4553df0eb7b4f11b01b6b1b499973048fe5.svg"
+                          alt=""
+                          style="width: 18px; height: 18px"
+                        />
+                        <img
+                          src="https://assets.dev.to/assets/fire-f60e7a582391810302117f987b22a8ef04a2fe0df7e3258a5f49332df1cec71e.svg"
+                          alt=""
+                          style="width: 18px; height: 18px"
+                        />
+                        <p
+                          class="mb-0 ms-2 text-dark d-none d-md-block"
+                          style="font-size: 14px"
+                        >
+                          125 Reactions
+                        </p>
+                      </div>
+                    </a>
+                  </div>
+                  <div>
+                    <a href="#" class="text-decoration-none">
+                      <div class="d-flex align-items-center">
+                        <img
+                          src="/assets/comment.svg"
+                          alt=""
+                          style="width: 30px; height: 30px"
+                        />
+                        <p class="mb-0 ms-1 text-dark" style="font-size: 14px">
+                          10
+                          <span class="d-none d-md-inline mb-0">comments</span>
+                        </p>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <a href="#" class="text-decoration-none"
+                  ><div
+                    class="d-flex justify-content-end align-items-center gap-3"
+                  >
+                    <small class="mb-0 ms-2 text-dark" style="font-size: 12px">
+                      1 min read
+                    </small>
+                    <img src="/assets/bookmark.svg" alt="" />
+                  </div>
+                </a>
+              </div>
+              <div class="d-flex align-items-top gap-3 mt-3">
+                <div class="d-flex justify-content-center ps-1">
+                  <img
+                    src="https://media2.dev.to/dynamic/image/width=90,height=90,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Fuser%2Fprofile_image%2F1527463%2Fcd2a636a-d97d-4e06-b33f-16a6fd9f43b8.png"
+                    alt=""
+                    class="rounded-circle"
+                    style="width: 24px; height: 24px"
+                  />
+                </div>
+                <div class="px-3 pt-3 pb-1 bg-back w-100 rounded">
+                  <div class="d-flex gap-1">
+                    <p class="mb-0" style="font-size: 14px">Ameema</p>
+                    <small class="text-gray" style="font-size: 14px"
+                      >2 days ago</small
+                    >
+                  </div>
+                  <p class="card-text mb-3" style="font-size: 14px">
+                    inspirational⭐
+                  </p>
+                </div>
+              </div>
+              <div class="d-flex align-items-top gap-3 mt-2">
+                <div class="d-flex justify-content-center ps-1">
+                  <img
+                    src="https://media2.dev.to/dynamic/image/width=90,height=90,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Fuser%2Fprofile_image%2F21408%2F3d055d92-0f51-4627-bdb7-9de09e3f408e.jpg"
+                    alt=""
+                    class="rounded-circle"
+                    style="width: 24px; height: 24px"
+                  />
+                </div>
+                <div class="px-3 pt-3 pb-1 bg-back w-100 rounded">
+                  <div class="d-flex gap-1">
+                    <p class="mb-0" style="font-size: 14px">Andrew Bone</p>
+                    <small class="text-gray" style="font-size: 14px"
+                      >3 days ago</small
+                    >
+                  </div>
+                  <p class="card-text mb-3" style="font-size: 14px">
+                    Ben Halpern!!! 🤯 Absolutely THRILLED to see this
+                    announcement! 🚀🚀🚀
+                  </p>
+                  <p>
+                    What an incredibly disruptive and forward-thinking move by
+                    The DEV Team! For too long, we've been constrained by the
+                    tyranny of quality content and useful information. DUMB DEV
+                    is the paradigm shift we didn't know we needed! 💡
+                  </p>
+                  <a
+                    href="#"
+                    class="text-decoration-none"
+                    style="font-size: 14px"
+                  >
+                    <p class="text-dark mb-2">See more</p>
+                  </a>
+                </div>
+              </div>
+              <div class="pt-4">
+                <a href="" class="text-decoration-none" style="font-size: 14px">
+                  <p class="text-dark ps-5">See all 10 comments</p>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- third card -->
+          <div class="card mb-2 rounded">
+            <div class="card-body p-3 p-lg-4">
+              <div class="d-flex align-items-center gap-3">
+                <div class="position-relative">
+                  <img
+                    src="https://media2.dev.to/dynamic/image/width=90,height=90,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Forganization%2Fprofile_image%2F7820%2Fe8a1bb9a-c520-4645-b24f-06ddf34c44bf.gif"
+                    alt=""
+                    class="rounded"
+                    style="width: 32px; height: 32px"
+                  />
+                  <img
+                    src="https://media2.dev.to/dynamic/image/width=90,height=90,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Fuser%2Fprofile_image%2F950976%2F69363f37-b7c5-4f1e-a2fe-29b4e4e33e92.png"
+                    alt=""
+                    class="rounded-circle position-absolute bottom-0 end-0 border border-white border-2"
+                    style="width: 21px; height: 21px"
+                  />
+                </div>
+                <div>
+                  <div
+                    class="d-flex justify-content-start align-items-center gap-1"
+                  >
+                    <p class="m-0" style="font-size: 14px">Anmol Baranwal</p>
+                    <img
+                      src="https://assets.dev.to/assets/subscription-icon-805dfa7ac7dd660f07ed8d654877270825b07a92a03841aa99a1093bd00431b2.png"
+                      alt=""
+                      style="width: 20px; height: 13px"
+                    />
+                    <p class="mb-0" style="font-size: 14px">for CopilotKit</p>
+                  </div>
+
+                  <p class="m-0 text-gray" style="font-size: 12px">
+                    Apr 1 (3 days ago)
+                  </p>
+                </div>
+              </div>
+              <h5
+                class="card-title ps-lg-5 pt-2 fw-bold fs-2 fs-lg-1"
+                style="font-size: 24px"
+              >
+                Automate 90% of Your Work with AI Agents (Real Examples & Code
+                Inside) 🚀 🤖
+              </h5>
+              <div class="d-flex gap-3 ps-lg-5 mb-2">
+                <a href="#" class="text-decoration-none text-dark">
+                  <p style="font-size: 14px" class="m-0">#programming</p>
+                </a>
+                <a href="#" class="text-decoration-none text-dark">
+                  <p style="font-size: 14px" class="m-0">#ai</p></a
+                >
+                <a href="#" class="text-decoration-none text-dark">
+                  <p style="font-size: 14px" class="m-0">#opensource</p></a
+                >
+              </div>
+              <div class="d-flex justify-content-between align-items-center">
+                <div
+                  class="d-flex justify-content-start align-items-center gap-3"
+                >
+                  <div>
+                    <a href="#" class="text-decoration-none">
+                      <div
+                        class="ps-lg-5 d-flex justify-content-start align-items-center"
+                      >
+                        <img
+                          src="https://assets.dev.to/assets/sparkle-heart-5f9bee3767e18deb1bb725290cb151c25234768a0e9a2bd39370c382d02920cf.svg"
+                          alt=""
+                          style="width: 18px; height: 18px"
+                        />
+                        <img
+                          src="https://assets.dev.to/assets/multi-unicorn-b44d6f8c23cdd00964192bedc38af3e82463978aa611b4365bd33a0f1f4f3e97.svg"
+                          alt=""
+                          style="width: 18px; height: 18px"
+                        />
+                        <img
+                          src="https://assets.dev.to/assets/exploding-head-daceb38d627e6ae9b730f36a1e390fca556a4289d5a41abb2c35068ad3e2c4b5.svg"
+                          alt=""
+                          style="width: 18px; height: 18px"
+                        />
+                        <img
+                          src="https://assets.dev.to/assets/raised-hands-74b2099fd66a39f2d7eed9305ee0f4553df0eb7b4f11b01b6b1b499973048fe5.svg"
+                          alt=""
+                          style="width: 18px; height: 18px"
+                        />
+                        <img
+                          src="https://assets.dev.to/assets/fire-f60e7a582391810302117f987b22a8ef04a2fe0df7e3258a5f49332df1cec71e.svg"
+                          alt=""
+                          style="width: 18px; height: 18px"
+                        />
+                        <p
+                          class="mb-0 ms-2 text-dark d-none d-md-block"
+                          style="font-size: 14px"
+                        >
+                          481 Reactions
+                        </p>
+                      </div>
+                    </a>
+                  </div>
+                  <div>
+                    <a href="#" class="text-decoration-none">
+                      <div class="d-flex align-items-center">
+                        <img
+                          src="/assets/comment.svg"
+                          alt=""
+                          style="width: 30px; height: 30px"
+                        />
+                        <p class="mb-0 ms-1 text-dark" style="font-size: 14px">
+                          14
+                          <span class="d-none d-md-inline mb-0">comments</span>
+                        </p>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <a href="#" class="text-decoration-none"
+                  ><div
+                    class="d-flex justify-content-end align-items-center gap-3"
+                  >
+                    <small class="mb-0 ms-2 text-dark" style="font-size: 12px">
+                      1 min read
+                    </small>
+                    <img src="/assets/bookmark.svg" alt="" />
+                  </div>
+                </a>
+              </div>
+              <div class="d-flex align-items-top gap-3 mt-3">
+                <div class="d-flex justify-content-center ps-1">
+                  <img
+                    src="https://media2.dev.to/dynamic/image/width=90,height=90,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Fuser%2Fprofile_image%2F1035856%2Fb5689e89-ae06-49fd-964d-3d855e397923.jpg"
+                    alt=""
+                    class="rounded-circle"
+                    style="width: 24px; height: 24px"
+                  />
+                </div>
+                <div class="px-3 pt-3 pb-1 bg-back w-100 rounded">
+                  <div class="d-flex gap-1">
+                    <p class="mb-0" style="font-size: 14px">Henry Willz</p>
+                    <small class="text-gray" style="font-size: 14px"
+                      >22 hours ago</small
+                    >
+                  </div>
+                  <p class="card-text mb-3" style="font-size: 14px">
+                    Nice article!
+                  </p>
+                </div>
+              </div>
+              <div class="d-flex align-items-top gap-3 mt-2">
+                <div class="d-flex justify-content-center ps-1">
+                  <img
+                    src="https://media2.dev.to/dynamic/image/width=90,height=90,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Fuser%2Fprofile_image%2F21408%2F3d055d92-0f51-4627-bdb7-9de09e3f408e.jpg"
+                    alt=""
+                    class="rounded-circle"
+                    style="width: 24px; height: 24px"
+                  />
+                </div>
+                <div class="px-3 pt-3 pb-1 bg-back w-100 rounded">
+                  <div class="d-flex gap-1">
+                    <p class="mb-0" style="font-size: 14px">henryjohn21</p>
+                    <small class="text-gray" style="font-size: 14px"
+                      >3 days ago</small
+                    >
+                  </div>
+                  <p class="card-text mb-3" style="font-size: 14px">
+                    I learned a lot from this article. <br />
+                    Thank you
+                  </p>
+                </div>
+              </div>
+              <div class="pt-4">
+                <a href="" class="text-decoration-none" style="font-size: 14px">
+                  <p class="text-dark ps-5">See all 14 comments</p>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- fourth card -->
+          <div class="card mb-2 rounded">
+            <div class="card-body p-3 p-lg-4">
+              <div class="d-flex align-items-center gap-3">
+                <div class="position-relative">
+                  <img
+                    src="https://media2.dev.to/dynamic/image/width=90,height=90,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Fuser%2Fprofile_image%2F461127%2F034233c4-ba6e-473c-8a8d-783831764a10.jpeg"
+                    alt=""
+                    class="rounded-circle"
+                    style="width: 32px; height: 32px"
+                  />
+                </div>
+                <div>
+                  <div
+                    class="d-flex justify-content-start align-items-center gap-1"
+                  >
+                    <p class="m-0" style="font-size: 14px">Jonas Scholz</p>
+                    <img
+                      src="https://assets.dev.to/assets/subscription-icon-805dfa7ac7dd660f07ed8d654877270825b07a92a03841aa99a1093bd00431b2.png"
+                      alt=""
+                      style="width: 20px; height: 13px"
+                    />
+                  </div>
+
+                  <p class="m-0 text-gray" style="font-size: 12px">
+                    Apr 1 (3 days ago)
+                  </p>
+                </div>
+              </div>
+              <h5 class="card-title ps-lg-5 pt-2 fw-bold fs-2 fs-lg-1">
+                Self-hosting n8n: the easy way
+              </h5>
+              <div class="d-flex gap-3 ps-lg-5 mb-2">
+                <a href="#" class="text-decoration-none text-dark">
+                  <p style="font-size: 14px" class="m-0">#cloud</p>
+                </a>
+                <a href="#" class="text-decoration-none text-dark">
+                  <p style="font-size: 14px" class="m-0">#devops</p></a
+                >
+                <a href="#" class="text-decoration-none text-dark">
+                  <p style="font-size: 14px" class="m-0">#opensource</p></a
+                >
+                <a href="#" class="text-decoration-none text-dark">
+                  <p style="font-size: 14px" class="m-0">#ai</p></a
+                >
+              </div>
+              <div class="d-flex justify-content-between align-items-center">
+                <div
+                  class="d-flex justify-content-start align-items-center gap-3"
+                >
+                  <div>
+                    <a href="#" class="text-decoration-none">
+                      <div
+                        class="ps-lg-5 d-flex justify-content-start align-items-center"
+                      >
+                        <img
+                          src="https://assets.dev.to/assets/sparkle-heart-5f9bee3767e18deb1bb725290cb151c25234768a0e9a2bd39370c382d02920cf.svg"
+                          alt=""
+                          style="width: 18px; height: 18px"
+                        />
+                        <img
+                          src="https://assets.dev.to/assets/multi-unicorn-b44d6f8c23cdd00964192bedc38af3e82463978aa611b4365bd33a0f1f4f3e97.svg"
+                          alt=""
+                          style="width: 18px; height: 18px"
+                        />
+                        <img
+                          src="https://assets.dev.to/assets/exploding-head-daceb38d627e6ae9b730f36a1e390fca556a4289d5a41abb2c35068ad3e2c4b5.svg"
+                          alt=""
+                          style="width: 18px; height: 18px"
+                        />
+                        <img
+                          src="https://assets.dev.to/assets/raised-hands-74b2099fd66a39f2d7eed9305ee0f4553df0eb7b4f11b01b6b1b499973048fe5.svg"
+                          alt=""
+                          style="width: 18px; height: 18px"
+                        />
+                        <img
+                          src="https://assets.dev.to/assets/fire-f60e7a582391810302117f987b22a8ef04a2fe0df7e3258a5f49332df1cec71e.svg"
+                          alt=""
+                          style="width: 18px; height: 18px"
+                        />
+                        <p class="mb-0 ms-2 text-dark d-none d-md-block">
+                          58 Reactions
+                        </p>
+                      </div>
+                    </a>
+                  </div>
+                  <div>
+                    <a href="#" class="text-decoration-none">
+                      <div class="d-flex align-items-center">
+                        <img
+                          src="/assets/comment.svg"
+                          alt=""
+                          style="width: 30px; height: 30px"
+                        />
+                        <p class="mb-0 ms-1 text-dark" style="font-size: 14px">
+                          9
+                          <span class="d-none d-md-inline mb-0">comments</span>
+                        </p>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <a href="#" class="text-decoration-none"
+                  ><div
+                    class="d-flex justify-content-end align-items-center gap-3"
+                  >
+                    <small class="mb-0 ms-2 text-dark" style="font-size: 12px">
+                      2 min read
+                    </small>
+                    <img src="/assets/bookmark.svg" alt="" />
+                  </div>
+                </a>
+              </div>
+              <div class="d-flex align-items-top gap-3 mt-3">
+                <div class="d-flex justify-content-center ps-1">
+                  <img
+                    src="https://media2.dev.to/dynamic/image/width=90,height=90,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Fuser%2Fprofile_image%2F2779820%2Fcc90d348-c94c-425a-ada6-d7939e988c46.png"
+                    alt=""
+                    class="rounded-circle"
+                    style="width: 24px; height: 24px"
+                  />
+                </div>
+                <div class="px-3 pt-3 pb-1 bg-back w-100 rounded">
+                  <div class="d-flex gap-1">
+                    <p class="mb-0" style="font-size: 14px">robert sallo</p>
+                    <small class="text-gray" style="font-size: 14px"
+                      >7 hours ago</small
+                    >
+                  </div>
+                  <p class="card-text mb-3" style="font-size: 14px">
+                    Naive question, does the n8n community version have the same
+                    connectors / integrations than the commercial one? Thanks!
+                  </p>
+                </div>
+              </div>
+              <div class="d-flex align-items-top gap-3 mt-2">
+                <div class="d-flex justify-content-center ps-1">
+                  <img
+                    src="https://media2.dev.to/dynamic/image/width=90,height=90,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Fuser%2Fprofile_image%2F21408%2F3d055d92-0f51-4627-bdb7-9de09e3f408e.jpg"
+                    alt=""
+                    class="rounded-circle"
+                    style="width: 24px; height: 24px"
+                  />
+                </div>
+                <div class="px-3 pt-3 pb-1 bg-back w-100 rounded">
+                  <div class="d-flex gap-1">
+                    <p class="mb-0" style="font-size: 14px">Đăng Tú</p>
+                    <small class="text-gray" style="font-size: 14px"
+                      >2 days ago</small
+                    >
+                  </div>
+                  <p class="card-text mb-3" style="font-size: 14px">
+                    Is there any option to do that on localhost only?
+                  </p>
+                </div>
+              </div>
+              <div class="pt-4">
+                <a href="" class="text-decoration-none" style="font-size: 14px">
+                  <p class="text-dark ps-5">See all 9 comments</p>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- fifth card -->
+          <div class="card mb-2 rounded">
+            <div class="card-body p-3 p-lg-4">
+              <div class="d-flex align-items-center gap-3">
+                <div class="position-relative">
+                  <img
+                    src="https://media2.dev.to/dynamic/image/width=90,height=90,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Fuser%2Fprofile_image%2F1%2Ff451a206-11c8-4e3d-8936-143d0a7e65bb.png"
+                    alt=""
+                    class="rounded-circle"
+                    style="width: 32px; height: 32px"
+                  />
+                </div>
+                <div>
+                  <div
+                    class="d-flex justify-content-start align-items-center gap-1"
+                  >
+                    <p class="m-0" style="font-size: 14px">Ben Halpern</p>
+                    <img
+                      src="https://assets.dev.to/assets/subscription-icon-805dfa7ac7dd660f07ed8d654877270825b07a92a03841aa99a1093bd00431b2.png"
+                      alt=""
+                      style="width: 20px; height: 13px"
+                    />
+                  </div>
+
+                  <p class="m-0 text-gray" style="font-size: 12px">
+                    Mar 31 (4 days ago)
+                  </p>
+                </div>
+              </div>
+              <h5 class="card-title ps-lg-5 pt-2 fw-bold fs-2 fs-lg-1">
+                Meme Monday
+              </h5>
+              <div class="d-flex gap-3 ps-lg-5 mb-2">
+                <a href="#" class="text-decoration-none text-dark">
+                  <p style="font-size: 14px" class="m-0">#discuss</p>
+                </a>
+                <a href="#" class="text-decoration-none text-dark">
+                  <p style="font-size: 14px" class="m-0">#jokes</p></a
+                >
+                <a href="#" class="text-decoration-none text-dark">
+                  <p style="font-size: 14px" class="m-0">#watercooler</p></a
+                >
+              </div>
+              <div class="d-flex justify-content-between align-items-center">
+                <div
+                  class="d-flex justify-content-start align-items-center gap-3"
+                >
+                  <div>
+                    <a href="#" class="text-decoration-none">
+                      <div
+                        class="ps-lg-5 d-flex justify-content-start align-items-center"
+                      >
+                        <img
+                          src="https://assets.dev.to/assets/sparkle-heart-5f9bee3767e18deb1bb725290cb151c25234768a0e9a2bd39370c382d02920cf.svg"
+                          alt=""
+                          style="width: 18px; height: 18px"
+                        />
+                        <img
+                          src="https://assets.dev.to/assets/multi-unicorn-b44d6f8c23cdd00964192bedc38af3e82463978aa611b4365bd33a0f1f4f3e97.svg"
+                          alt=""
+                          style="width: 18px; height: 18px"
+                        />
+                        <img
+                          src="https://assets.dev.to/assets/exploding-head-daceb38d627e6ae9b730f36a1e390fca556a4289d5a41abb2c35068ad3e2c4b5.svg"
+                          alt=""
+                          style="width: 18px; height: 18px"
+                        />
+                        <img
+                          src="https://assets.dev.to/assets/raised-hands-74b2099fd66a39f2d7eed9305ee0f4553df0eb7b4f11b01b6b1b499973048fe5.svg"
+                          alt=""
+                          style="width: 18px; height: 18px"
+                        />
+                        <img
+                          src="https://assets.dev.to/assets/fire-f60e7a582391810302117f987b22a8ef04a2fe0df7e3258a5f49332df1cec71e.svg"
+                          alt=""
+                          style="width: 18px; height: 18px"
+                        />
+                        <p
+                          class="mb-0 ms-2 text-dark d-none d-md-block"
+                          style="font-size: 14px"
+                        >
+                          68 Reactions
+                        </p>
+                      </div>
+                    </a>
+                  </div>
+                  <div>
+                    <a href="#" class="text-decoration-none">
+                      <div class="d-flex align-items-center">
+                        <img
+                          src="/assets/comment.svg"
+                          alt=""
+                          style="width: 30px; height: 30px"
+                        />
+                        <p class="mb-0 ms-1 text-dark" style="font-size: 14px">
+                          85
+                          <span class="d-none d-md-inline mb-0">comments</span>
+                        </p>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <a href="#" class="text-decoration-none"
+                  ><div
+                    class="d-flex justify-content-end align-items-center gap-3"
+                  >
+                    <small class="mb-0 ms-2 text-dark" style="font-size: 12px">
+                      1 min read
+                    </small>
+                    <img src="/assets/bookmark.svg" alt="" />
+                  </div>
+                </a>
+              </div>
+              <div class="d-flex align-items-top gap-3 mt-3">
+                <div class="d-flex justify-content-center ps-1">
+                  <img
+                    src="https://media2.dev.to/dynamic/image/width=90,height=90,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Fuser%2Fprofile_image%2F2953723%2F1d5fed62-d6e6-4e2f-8f31-784dcd6d28e6.png"
+                    alt=""
+                    class="rounded-circle"
+                    style="width: 24px; height: 24px"
+                  />
+                </div>
+                <div class="px-3 pt-3 pb-1 bg-back w-100 rounded">
+                  <div class="d-flex gap-1">
+                    <p class="mb-0" style="font-size: 14px">Pradeep</p>
+                    <small class="text-gray" style="font-size: 14px"
+                      >1 day ago</small
+                    >
+                  </div>
+                  <p class="card-text mb-2" style="font-size: 14px">
+                    Frontend Devs:
+                  </p>
+                  <img
+                    src="https://media2.dev.to/dynamic/image/width=800%2Cheight=%2Cfit=scale-down%2Cgravity=auto%2Cformat=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2F8ttalpx21xirdhbnyhjf.jpg"
+                    alt=""
+                    style="width: 152px; height: 152px"
+                    class="rounded mb-3"
+                  />
+                </div>
+              </div>
+              <div class="d-flex align-items-top gap-3 mt-2">
+                <div class="d-flex justify-content-center ps-1">
+                  <img
+                    src="https://media2.dev.to/dynamic/image/width=90,height=90,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Fuser%2Fprofile_image%2F1438833%2F5cc60a83-9950-406b-a6ac-dd6b81091faa.png"
+                    alt=""
+                    class="rounded-circle"
+                    style="width: 24px; height: 24px"
+                  />
+                </div>
+                <div class="px-3 pt-3 pb-1 bg-back w-100 rounded">
+                  <div class="d-flex gap-1">
+                    <p class="mb-0" style="font-size: 14px">Alex P</p>
+                    <small class="text-gray" style="font-size: 14px"
+                      >2 days ago</small
+                    >
+                  </div>
+                  <p class="card-text mb-2" style="font-size: 14px">Actual:</p>
+                  <img
+                    src="https://media2.dev.to/dynamic/image/width=800%2Cheight=%2Cfit=scale-down%2Cgravity=auto%2Cformat=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fvg5fwumk2asyj7ap0mw9.jpg"
+                    alt=""
+                    style="width: 152px; height: 152px"
+                    class="rounded mb-3"
+                  />
+                </div>
+              </div>
+              <div class="pt-4">
+                <a href="" class="text-decoration-none" style="font-size: 14px">
+                  <p class="text-dark ps-5">See all 85 comments</p>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- sixth card -->
+          <div class="card mb-2 rounded">
+            <div class="card-body p-3 p-lg-4">
+              <div class="d-flex align-items-center gap-3">
+                <div class="position-relative">
+                  <img
+                    src="https://media2.dev.to/dynamic/image/width=90,height=90,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Fuser%2Fprofile_image%2F965723%2Fe0982512-4de1-4154-b3c3-1869d19e9ecc.png"
+                    alt=""
+                    class="rounded-circle"
+                    style="width: 32px; height: 32px"
+                  />
+                </div>
+                <div>
+                  <div
+                    class="d-flex justify-content-start align-items-center gap-1"
+                  >
+                    <p class="m-0" style="font-size: 14px">Arindam Majumder</p>
+                    <img
+                      src="https://assets.dev.to/assets/subscription-icon-805dfa7ac7dd660f07ed8d654877270825b07a92a03841aa99a1093bd00431b2.png"
+                      alt=""
+                      style="width: 20px; height: 13px"
+                    />
+                  </div>
+
+                  <p class="m-0 text-gray" style="font-size: 12px">
+                    Apr 1 (3 days ago)
+                  </p>
+                </div>
+              </div>
+              <h5 class="card-title ps-lg-5 pt-2 fw-bold fs-2 fs-lg-1">
+                The Ultimate Stack for Serverless & Cloud-Native Developers in
+                2025 ⚡️
+              </h5>
+              <div class="d-flex gap-3 ps-lg-5 mb-2">
+                <a href="#" class="text-decoration-none text-dark">
+                  <p style="font-size: 14px" class="m-0">#webdev</p>
+                </a>
+                <a href="#" class="text-decoration-none text-dark">
+                  <p style="font-size: 14px" class="m-0">#cloud</p></a
+                >
+                <a href="#" class="text-decoration-none text-dark">
+                  <p style="font-size: 14px" class="m-0">#python</p></a
+                >
+                <a href="#" class="text-decoration-none text-dark">
+                  <p style="font-size: 14px" class="m-0">#typescript</p></a
+                >
+              </div>
+              <div class="d-flex justify-content-between align-items-center">
+                <div
+                  class="d-flex justify-content-start align-items-center gap-3"
+                >
+                  <div>
+                    <a href="#" class="text-decoration-none">
+                      <div
+                        class="ps-lg-5 d-flex justify-content-start align-items-center"
+                      >
+                        <img
+                          src="https://assets.dev.to/assets/sparkle-heart-5f9bee3767e18deb1bb725290cb151c25234768a0e9a2bd39370c382d02920cf.svg"
+                          alt=""
+                          style="width: 18px; height: 18px"
+                        />
+                        <img
+                          src="https://assets.dev.to/assets/multi-unicorn-b44d6f8c23cdd00964192bedc38af3e82463978aa611b4365bd33a0f1f4f3e97.svg"
+                          alt=""
+                          style="width: 18px; height: 18px"
+                        />
+                        <img
+                          src="https://assets.dev.to/assets/exploding-head-daceb38d627e6ae9b730f36a1e390fca556a4289d5a41abb2c35068ad3e2c4b5.svg"
+                          alt=""
+                          style="width: 18px; height: 18px"
+                        />
+                        <img
+                          src="https://assets.dev.to/assets/raised-hands-74b2099fd66a39f2d7eed9305ee0f4553df0eb7b4f11b01b6b1b499973048fe5.svg"
+                          alt=""
+                          style="width: 18px; height: 18px"
+                        />
+                        <img
+                          src="https://assets.dev.to/assets/fire-f60e7a582391810302117f987b22a8ef04a2fe0df7e3258a5f49332df1cec71e.svg"
+                          alt=""
+                          style="width: 18px; height: 18px"
+                        />
+                        <p
+                          class="mb-0 ms-2 text-dark d-none d-md-block"
+                          style="font-size: 14px"
+                        >
+                          87 Reactions
+                        </p>
+                      </div>
+                    </a>
+                  </div>
+                  <div>
+                    <a href="#" class="text-decoration-none">
+                      <div class="d-flex align-items-center">
+                        <img
+                          src="/assets/comment.svg"
+                          alt=""
+                          style="width: 30px; height: 30px"
+                        />
+                        <p class="mb-0 ms-1 text-dark" style="font-size: 14px">
+                          11
+                          <span class="d-none d-md-inline mb-0">comments</span>
+                        </p>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <a href="#" class="text-decoration-none"
+                  ><div
+                    class="d-flex justify-content-end align-items-center gap-3"
+                  >
+                    <small class="mb-0 ms-2 text-dark" style="font-size: 12px">
+                      11 min read
+                    </small>
+                    <img src="/assets/bookmark.svg" alt="" />
+                  </div>
+                </a>
+              </div>
+              <div class="d-flex align-items-top gap-3 mt-3">
+                <div class="d-flex justify-content-center ps-1">
+                  <img
+                    src="https://media2.dev.to/dynamic/image/width=90,height=90,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Fuser%2Fprofile_image%2F2975663%2F21598326-fba9-412a-9291-a354d2c9d4e9.png"
+                    alt=""
+                    class="rounded-circle"
+                    style="width: 24px; height: 24px"
+                  />
+                </div>
+                <div class="px-3 pt-3 pb-1 bg-back w-100 rounded">
+                  <div class="d-flex gap-1">
+                    <p class="mb-0" style="font-size: 14px">Devops Kiponos</p>
+                    <small class="text-gray" style="font-size: 14px"
+                      >2 days ago</small
+                    >
+                  </div>
+                  <p class="card-text mb-3" style="font-size: 14px">
+                    Thanks! I must put our Kiponos.io for configuration
+                    management. It fits perfectly to this article. Kiponos
+                    provides quick and safe config handling by beautiful web
+                    admin and convenient SDK. Developers and DevOps alike say
+                    goodbye...
+                  </p>
+                </div>
+              </div>
+              <div class="d-flex align-items-top gap-3 mt-2">
+                <div class="d-flex justify-content-center ps-1">
+                  <img
+                    src="https://media2.dev.to/dynamic/image/width=90,height=90,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Fuser%2Fprofile_image%2F1399375%2Fb74981b6-6dd4-4a8d-b2d1-2ead808ac834.jpg"
+                    alt=""
+                    class="rounded-circle"
+                    style="width: 24px; height: 24px"
+                  />
+                </div>
+                <div class="px-3 pt-3 pb-1 bg-back w-100 rounded">
+                  <div class="d-flex gap-1">
+                    <p class="mb-0" style="font-size: 14px">Akshay bondre</p>
+                    <small class="text-gray" style="font-size: 14px"
+                      >3 days ago</small
+                    >
+                  </div>
+                  <p class="card-text mb-3" style="font-size: 14px">
+                    I've used Encore previously. But i see a few new tools.Will
+                    check them
+                  </p>
+                </div>
+              </div>
+              <div class="pt-4">
+                <a href="" class="text-decoration-none" style="font-size: 14px">
+                  <p class="text-dark ps-5">See all 11 comments</p>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- col-3 -->
+        <div class="col-lg-3 col-md-0 d-none d-lg-block pt-5">
+          <div class="mt-3 bg-white w-100 px-4 py-3 rounded border-bottom">
+            <h5 style="font-size: 20px" class="text-start mb-0 fw-bold">
+              Active discussions
+            </h5>
+          </div>
+          <a href="" class="text-decoration-none">
+            <div class="py-3 bg-white px-4 border-bottom">
+              <p class="text-dark mb-0" style="font-size: 16px">
+                Congrats to the KendoReact Free Components Challenge Winners!
+              </p>
+              <small class="text-gray">8 comments</small>
+            </div>
+          </a>
+          <a href="" class="text-decoration-none">
+            <div class="py-3 bg-white px-4 border-bottom">
+              <p class="text-dark mb-0" style="font-size: 16px">
+                Using the Gemini API on Cloud Run to Build a Chat Application
+              </p>
+              <small class="text-gray">3 comments</small>
+            </div>
+          </a>
+          <a href="" class="text-decoration-none">
+            <div class="py-3 bg-white px-4 border-bottom">
+              <p class="text-dark mb-0" style="font-size: 16px">Meme Monday</p>
+              <small class="text-gray">85 comments</small>
+            </div>
+          </a>
+          <a href="" class="text-decoration-none">
+            <div class="py-3 bg-white px-4 border-bottom">
+              <p class="text-dark mb-0" style="font-size: 16px">
+                Teaching Code in the AI Era: Why Fundamentals Still Matter
+              </p>
+              <small class="text-gray">2 comments</small>
+            </div>
+          </a>
+          <a href="" class="text-decoration-none">
+            <div class="py-3 bg-white px-4 border-bottom">
+              <p class="text-dark mb-0" style="font-size: 16px">
+                Self-hosting n8n: the easy way
+              </p>
+              <small class="text-gray">9 comments</small>
+            </div>
+          </a>
+          <a href="" class="text-decoration-none"
+            ><div class="py-3 bg-white px-4 border-bottom">
+              <p class="text-dark mb-0" style="font-size: 16px">
+                Three Ways to Fight AI Crawlers
+              </p>
+              <small class="text-gray">2 comments</small>
+            </div>
+          </a>
+          <a href="" class="text-decoration-none">
+            <div class="py-3 bg-white px-4 border-bottom">
+              <p class="text-dark mb-0" style="font-size: 16px">
+                Microsoft announces a revolutionary keyboard designed for vibe
+                coding!
+              </p>
+              <small class="text-gray">18 comments</small>
+            </div>
+          </a>
+          <a href="" class="text-decoration-none">
+            <div class="py-3 bg-white px-4 border-bottom">
+              <p class="text-dark mb-0" style="font-size: 16px">
+                Introducing "DUMB DEV"
+              </p>
+              <small class="text-gray">10 comments</small>
+            </div>
+          </a>
+          <div class="mt-2 bg-white w-100 px-3 py-2 rounded border-bottom">
+            <div class="d-flex justify-content-between align-items-center">
+              <p class="text-dark mb-0" style="font-size: 14px">
+                👋 What's happening this week
+              </p>
+              <img src="/assets/points.svg" alt="" />
+            </div>
+            <h5 class="mt-3">Challenges 🤗</h5>
+            <div class="border border-dark rounded p-2 mb-3">
+              <p style="font-size: 16px">Just Launched 🚀</p>
+              <a href="">
+                <img
+                  src="https://media2.dev.to/dynamic/image/width=880%2Cheight=%2Cfit=scale-down%2Cgravity=auto%2Cformat=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Ftdu7wtkzz67tqpzexnv1.png"
+                  alt=""
+                  class="w-100 rounded mb-2"
+                />
+                <p style="font-size: 16px" class="text-primary">
+                  Alibaba Cloud Web Game Challenge
+                </p>
+              </a>
+              <p style="font-size: 16px" class="fst-italic">
+                Get your submissions in early!
+              </p>
+            </div>
+            <div class="border border-dark rounded p-2 mb-3">
+              <p style="font-size: 16px">Happening Now ✨</p>
+              <a href="">
+                <img
+                  src="https://media2.dev.to/dynamic/image/width=880%2Cheight=%2Cfit=scale-down%2Cgravity=auto%2Cformat=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fwkz8yrhhodumbj7pnfwv.png"
+                  alt=""
+                  class="w-100 rounded mb-2"
+                />
+                <p style="font-size: 16px" class="text-primary">
+                  Pulumi Deploy and Document Challenge
+                </p>
+              </a>
+              <p style="font-size: 16px" class="fst-italic">
+                $3,000 prize pool!
+              </p>
+            </div>
+            <div class="border border-dark rounded p-2 mb-3">
+              <p style="font-size: 16px">Celebrate With Us 💜</p>
+              <a href="">
+                <img
+                  src="https://media2.dev.to/dynamic/image/width=880%2Cheight=%2Cfit=scale-down%2Cgravity=auto%2Cformat=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fi7uzu7m51rl9yhs2yryr.png"
+                  alt=""
+                  class="w-100 rounded mb-2"
+                />
+                <p style="font-size: 16px" class="text-primary">
+                  WeCoded Challenge
+                </p>
+              </a>
+              <p style="font-size: 16px" class="fst-italic">
+                Build a landing page or share your story!
+              </p>
+            </div>
+          </div>
+          <div class="mt-2 bg-white w-100 px-3 py-2 rounded border-bottom">
+            <h5 class="mt-1 mb-0">#discuss</h5>
+            <small class="text-gray" style="font-size: 11px"
+              >Discussion threads targeting the whole community
+            </small>
+          </div>
+          <a href="" class="text-decoration-none">
+            <div class="bg-white w-100 px-3 py-3 border-bottom">
+              <p class="text-dark mb-0">
+                Why Learn Cloud/AWS? 🧐 Provisioning AWS EC2s in VPC using
+                Terraform with Hands-on Sample ☁️🖥️
+              </p>
+              <small class="text-gray pt-1" style="font-size: 14px"
+                >2 comments
+              </small>
+            </div>
+          </a>
+          <a href="" class="text-decoration-none">
+            <div class="bg-white w-100 px-3 py-3 border-bottom">
+              <p class="text-dark mb-0" style="font-size: 16px">
+                🔥 XAMPP is Dead？ Docker is Overkill？Try The Lightning-Fast
+                Dev Tool 🔥
+              </p>
+              <small class="text-gray pt-1" style="font-size: 14px"
+                >4 comments
+              </small>
+            </div>
+          </a>
+          <a href="" class="text-decoration-none">
+            <div class="bg-white w-100 px-3 py-3 border-bottom">
+              <p class="text-dark mb-0" style="font-size: 16px">
+                Modernizing the Workplace with Hybrid IT
+              </p>
+              <div
+                class="bg-new rounded w-25 h-25 p-1 mt-2 d-flex justify-content-center align-items-center"
+              >
+                <p class="text-brown mb-0">New</p>
+              </div>
+            </div>
+          </a>
+          <a href="" class="text-decoration-none">
+            <div class="bg-white w-100 px-3 py-3 border-bottom">
+              <p class="text-dark mb-0" style="font-size: 16px">
+                🚀 Vibe Coding is all about speed, creativity, and AI-powered
+                flow—but does it make us better deve...
+              </p>
+              <div
+                class="bg-new rounded w-25 h-25 p-1 mt-2 d-flex justify-content-center align-items-center"
+              >
+                <p class="text-brown mb-0">New</p>
+              </div>
+            </div>
+          </a>
+          <a href="" class="text-decoration-none">
+            <div class="bg-white w-100 px-3 py-3 border-bottom">
+              <p class="text-dark mb-0" style="font-size: 16px">
+                AWS Community Day Italy 2025: My Experience as an Attendee and
+                Session Takeaways
+              </p>
+              <small class="text-gray pt-1" style="font-size: 14px"
+                >2 comments
+              </small>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
