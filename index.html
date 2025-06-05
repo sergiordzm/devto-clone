@@ -27,11 +27,12 @@
           >
             <span class="navbar-toggler-icon"></span>
           </button>
-          <img
-            src="https://media2.dev.to/dynamic/image/quality=100/https://dev-to-uploads.s3.amazonaws.com/uploads/logos/resized_logo_UQww2soKuUsjaOGNB38o.png"
-            alt="devto logo"
-            class="image-logo"
-          />
+          <a href="./index.html">
+            <img
+              src="https://media2.dev.to/dynamic/image/quality=100/https://dev-to-uploads.s3.amazonaws.com/uploads/logos/resized_logo_UQww2soKuUsjaOGNB38o.png"
+              alt="devto logo"
+              class="image-logo"
+          /></a>
           <form class="d-none d-md-block w-100" role="search">
             <input
               class="form-control"
@@ -42,26 +43,10 @@
           </form>
         </div>
 
-        <div class="d-flex justify-content-end align-items-center w-25">
-          <button
-            class="btn btn-outline-post d-none d-md-block fs-6 me-2"
-            type="submit"
-          >
-            Create post
-          </button>
-          <img src="/assets/search.svg" alt="" class="d-block d-md-none me-2" />
-          <img
-            src="/assets/bell.svg"
-            alt=""
-            style="width: 24px; height: 24px"
-            class="me-2"
-          />
-          <img
-            src="https://picsum.photos/id/237/200/300"
-            alt=""
-            class="rounded-circle profile-picture"
-          />
-        </div>
+        <div
+          class="d-flex justify-content-end align-items-center w-25"
+          id="nav-wrapper"
+        ></div>
 
         <div
           class="collapse navbar-collapse dropdown-menu-start w-50"
@@ -1605,5 +1590,6 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
+    <script type="module" src="js/main.js"></script>
   </body>
 </html>
