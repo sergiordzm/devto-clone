@@ -12448,4 +12448,32 @@ textarea.form-control-lg {
 .profile-picture {
   width: 32px;
   height: 32px;
+}
+
+.image-login {
+  width: 60px;
+  height: 48px;
+}
+
+.registration_description {
+  font-size: 15px;
+  text-align: center;
+}
+
+.button-login {
+  padding: 12px;
+  border: 1px solid rgb(229, 229, 229);
+}
+
+.button-login:hover {
+  background-color: rgb(245, 245, 245);
+  line-height: 24px;
+}
+
+.text-label {
+  font-size: 14px;
+}
+
+text-button {
+  font-size: 14px;
 }/*# sourceMappingURL=styles.css.map */
