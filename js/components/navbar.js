@@ -35,6 +35,10 @@ let updateNavAuth = () => {
       profileImage,
       signOutButton
     );
+    signOutButton.addEventListener("click", (event) => {
+      localStorage.removeItem("token");
+      location.replace("../../views/login.html");
+    });
   } else {
     let logInButton = document.createElement("a");
     logInButton.textContent = "Log In";
