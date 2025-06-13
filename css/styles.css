@@ -12474,6 +12474,15 @@ textarea.form-control-lg {
   font-size: 14px;
 }
 
-text-button {
+.text-button {
   font-size: 14px;
+}
+
+.warning-note {
+  background-color: #fbebec;
+  color: #b91c1c;
+}
+
+.notice-wrapper {
+  width: 33.4%;
 }/*# sourceMappingURL=styles.css.map */

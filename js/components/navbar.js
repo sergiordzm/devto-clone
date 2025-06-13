@@ -36,8 +36,9 @@ let updateNavAuth = () => {
       signOutButton
     );
   } else {
-    let logInButton = document.createElement("button");
+    let logInButton = document.createElement("a");
     logInButton.textContent = "Log In";
+    logInButton.setAttribute("href", "../../views/login.html");
     logInButton.classList.add("btn");
     logInButton.setAttribute("type", "button");
     logInButton.setAttribute("alt", "Log in button");

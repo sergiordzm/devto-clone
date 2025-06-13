@@ -13,14 +13,19 @@
     <link rel="stylesheet" href="../css/styles.css" />
   </head>
   <body>
-    <div class="container d-flex justify-content-center align-items-center">
-      <div class="row justify-content-center p-3">
+    <div
+      class="container d-flex justify-content-center align-items-center"
+      id="main-container"
+    >
+      <div class="row d-flex justify-content-center p-3">
         <div class="col-12 d-flex flex-column align-items-center py-4">
-          <img
-            src="https://media2.dev.to/dynamic/image/quality=100/https://dev-to-uploads.s3.amazonaws.com/uploads/logos/resized_logo_UQww2soKuUsjaOGNB38o.png"
-            alt=""
-            class="image-login"
-          />
+          <a href="../index.html">
+            <img
+              src="https://media2.dev.to/dynamic/image/quality=100/https://dev-to-uploads.s3.amazonaws.com/uploads/logos/resized_logo_UQww2soKuUsjaOGNB38o.png"
+              alt=""
+              class="image-login"
+          /></a>
+
           <h1 class="fs-2 mt-3">Join the DEV Community</h1>
           <p class="registration_description">
             DEV Community is a community of 3,221,869 amazing developers
@@ -90,7 +95,7 @@
             </div>
           </div>
           <div class="w-100">
-            <form>
+            <form class="form-login">
               <div class="mb-3">
                 <label for="exampleInputEmail1" class="form-label">Email</label>
                 <input
@@ -123,7 +128,11 @@
                 </div>
                 <a href="#" class="text-decoration-none">Forgot Password?</a>
               </div>
-              <button type="submit" class="btn btn-primary w-100">
+              <button
+                type="submit"
+                class="btn btn-primary w-100"
+                id="form-button"
+              >
                 Log in
               </button>
             </form>
@@ -151,5 +160,6 @@
       integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
       crossorigin="anonymous"
     ></script>
+    <script type="module" src="../js/login.js"></script>
   </body>
 </html>
