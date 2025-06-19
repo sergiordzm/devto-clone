@@ -12448,4 +12448,62 @@ textarea.form-control-lg {
 .profile-picture {
   width: 32px;
   height: 32px;
+}
+
+.image-login {
+  width: 60px;
+  height: 48px;
+}
+
+.registration_description {
+  font-size: 15px;
+  text-align: center;
+}
+
+.button-login {
+  padding: 12px;
+  border: 1px solid rgb(229, 229, 229);
+}
+
+.button-login:hover {
+  background-color: rgb(245, 245, 245);
+  line-height: 24px;
+}
+
+.text-label {
+  font-size: 14px;
+}
+
+.text-button {
+  font-size: 14px;
+}
+
+.warning-note {
+  background-color: #fbebec;
+  color: #b91c1c;
+}
+
+.notice-wrapper {
+  width: 33.4%;
+}
+
+.post-image {
+  height: 350px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+}
+
+.user-image {
+  width: 32px;
+  height: 32px;
+}
+
+.fourteen-font-size {
+  font-size: 14px;
+}
+
+.emojis-size {
+  width: 18px;
+  height: 18px;
 }/*# sourceMappingURL=styles.css.map */
