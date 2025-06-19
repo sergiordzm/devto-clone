@@ -12485,4 +12485,25 @@ textarea.form-control-lg {
 
 .notice-wrapper {
   width: 33.4%;
+}
+
+.post-image {
+  height: 350px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+}
+
+.user-image {
+  width: 32px;
+  height: 32px;
+}
+
+.fourteen-font-size {
+  font-size: 14px;
+}
+
+.emojis-size {
+  width: 18px;
+  height: 18px;
 }/*# sourceMappingURL=styles.css.map */
