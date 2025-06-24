@@ -33,13 +33,23 @@
               alt="devto logo"
               class="image-logo"
           /></a>
-          <form class="d-none d-md-block w-100" role="search">
+          <form class="d-none d-md-block w-100 position-relative" role="search">
             <input
               class="form-control"
               type="search"
               placeholder="Search"
               aria-label="Search"
+              id="search-input"
             />
+            <div
+              id="search-results"
+              class="position-absolute d-none z-1 w-100 bg-white rounded"
+            >
+              <ul
+                id="results-list"
+                class="list-unstyled d-flex flex-column"
+              ></ul>
+            </div>
           </form>
         </div>
 
