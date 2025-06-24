@@ -4,7 +4,7 @@ let navBar = document.getElementById("nav-wrapper");
 
 let updateNavAuth = () => {
   if (tokenExists()) {
-    let createButton = document.createElement("button");
+    let createButton = document.createElement("a");
     createButton.classList.add(
       "btn",
       "btn-outline-post",
@@ -14,6 +14,7 @@ let updateNavAuth = () => {
       "me-2"
     );
     createButton.setAttribute("type", "button");
+    createButton.setAttribute("href", "/views/new.html");
     createButton.textContent = "Create post";
     let searchImage = document.createElement("img");
     searchImage.setAttribute("src", "../../assets/search.svg");
