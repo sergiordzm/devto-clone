@@ -7,4 +7,20 @@ const emojisArray = [
   "https://assets.dev.to/assets/fire-f60e7a582391810302117f987b22a8ef04a2fe0df7e3258a5f49332df1cec71e.svg",
 ];
 
-export { emojisArray };
+/*meses del año para formateo de fechas*/
+const months = [
+  "January",
+  "February",
+  "March",
+  "April",
+  "May",
+  "June",
+  "July",
+  "August",
+  "September",
+  "October",
+  "November",
+  "December",
+];
+
+export { emojisArray, months };
