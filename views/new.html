@@ -4,8 +4,73 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>New Post</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../css/styles.css" />
   </head>
-  <body>
-    <h1>Hola</h1>
+  <body class="bg-back">
+    <div class="container-fluid w-75">
+      <div class="row">
+        <div class="col-8">
+          <form class="px-3">
+            <div
+              class="d-flex gap-2 justify-content-between align-items-center pt-3"
+            >
+              <div class="d-flex gap-3 align-items-center">
+                <a href="../index.html">
+                  <img
+                    src="https://media2.dev.to/dynamic/image/quality=100/https://dev-to-uploads.s3.amazonaws.com/uploads/logos/resized_logo_UQww2soKuUsjaOGNB38o.png"
+                    alt="devto logo"
+                    class="image-logo"
+                /></a>
+                <p class="m-0">Create post</p>
+              </div>
+              <div>
+                <a href="" class="text-decoration-none btn" type="button"
+                  >Edit</a
+                >
+                <a href="" class="text-decoration-none btn" type="button"
+                  >Preview</a
+                >
+              </div>
+            </div>
+            <div
+              class="inputs d-flex flex-column align-items-center justify-content-center w-100 ps-5 pt-4"
+            >
+              <input
+                type="email"
+                class="form-control form-control-lg"
+                id="exampleInputEmail1"
+                aria-describedby="emailHelp"
+                placeholder="Add a cover image"
+              />
+
+              <input
+                type="password"
+                class="form-control"
+                id="exampleInputPassword1"
+                placeholder="New post title here..."
+              />
+              <input
+                type="password"
+                class="form-control"
+                id="exampleInputPassword1"
+                placeholder="Write your post content here..."
+              />
+              <button type="submit" class="btn btn-primary">Publish</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
